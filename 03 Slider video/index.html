@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider video</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="bannervideo" id="slideshow">
+      <video src="img/video1.mp4" autoplay muted loop class="active"></video>
+      <video src="img/video2.mp4" autoplay muted loop></video>
+      <video src="img/video3.mp4" autoplay muted loop></video>
+      <video src="img/video4.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="containter">
+      <header id="navbar">
+        <a href="#" class="logo">World!</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="menuicon" onclick="toggleMenu();"></span>
+      </header>
+
+      <div class="content">
+        <div class="bannertext" id="slideshowtext">
+          <div class="active">
+            <h2 class="text1">T<span class="hidden">🍣</span>O<span class="hidden">🍣</span>K<span class="hidden">🍣</span>Y<span class="hidden">🍣</span>O</h2>
+          </div>
+          <div>
+            <h2 class="text2">P<span class="hidden">🥐</span>A<span class="hidden">🥐</span>R<span class="hidden">🥐</span>I<span class="hidden">🥐</span>S</h2>
+          </div>
+          <div>
+            <h2 class="text3">E<span class="hidden">🐫</span>G<span class="hidden">🐫</span>Y<span class="hidden">🐫</span>P<span class="hidden">🐫</span>T</h2>
+          </div>
+          <div>
+            <h2 class="text4">M<span class="hidden">🥥</span>A<span class="hidden">🥥</span>L<span class="hidden">🥥</span>D<span class="hidden">🥥</span>I<span class="hidden">🥥</span>V<span class="hidden">🥥</span>E<span class="hidden">🥥</span>S</h2>
+          </div>
+        </div>
+      </div>
+
+      <ul class="controls">
+        <li onclick="prevSlideVideo(); prevSlideText();"><img src="img/left.png" alt=""></li>
+        <li onclick="nextSlideVideo(); nextSlideText();"><img src="img/right.png" alt=""></li>
+      </ul>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
